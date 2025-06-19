@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Html Form</h1>
+        <h4>Registration Form</h4>
+        <form action="">
+            <fieldset>
+                <fieldset>
+                <legend>Personal Imformation:</legend>
+                <div class="group">
+                    <label for="fname">First Name;</label>
+                    <input type="text" name="name" id="fname" required="required" placeholder="Enter your full name here">
+
+                    <label for="mname">Middle Name:</label>
+                    <input type="text" name="mname" id="mname" placeholder="Enter your middle name" >
+                    <br>
+                    <label for="Lname">Last Name:</label>
+                    <input type="text" name="Lname" id="Lname" required="required" placeholder="Enter Last name">
+
+                </div>
+                <div class="group" >
+                    <label for="Gender">Gender:</label>
+                    <input type="radio" name="Gender" id="male" checked="checked" > Male
+                    <input type="radio" name="Gender" id="female"   >Female
+                    <input type="radio" name="Gender" id="others">Others
+
+                </div>
+                <div class="group">
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address" required="required" placeholder="Enter your addresss here">
+                </div>
+                <div class="group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required="required" placeholder="Enteer your email">
+
+
+                </div>
+                <DIV class="group"  >
+                    <label for="phone"  >Phone Number:</label>
+                    <input type="number" number="phone" id="phone   " required="required"
+                    placeholder="Enter your no."    >
+
+
+                </DIV>
+                <div class="group">
+                    <label for="country">Country:</label>
+                    <select name="country" id="country">
+                    <option value="*" selected="select">Select Country:</option>
+                    <option value="np" class="value">Nepal</option>
+                    <option value="ch" class="value">China</option>
+                    <option value="us" class="value">USA</option>
+                    <option value="uk" class="value">UK</option>
+                    <option value="In" class="value">India</option>
+                    </select>
+
+                </div>
+                <div class="group">
+                    <label for="pro">Programming</label>
+                   <input type="checkbox" value="java" name="java" id="java"  >Java
+                   <input type="checkbox" value="php" name="php" id="php"  >php
+                   <input type="checkbox" value="python" name="python" id="python"  >python
+                   <input type="checkbox" value="net" name="net" id="net"  >net
+                </div></fieldset>
+                <fieldset>
+                    <legend>Enter Bio:</legend>
+                <div class="group">
+                    <label for="bio"></label>
+                    <textarea name="bio" id="bio" rows="5" cols="50" placeholder="something about you"></textarea>
+                    <hr>
+                    <fieldset>
+                        <legend>Upload Images:</legend>
+                        <label for="images"></label>
+                        <input type="file" name="images" id="images">
+
+                    </fieldset>
+
+
+                </div>
+               
+                <div class="group">
+                     <fieldset>
+                    <legend>User login Information:</legend>
+                    <label for="uname">Username:    </label>
+                    <input type="text" name="uname" id="uname   " required="required" placeholder="Enter your Username"><br>
+                    <hr>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password " required="required" placeholder="*************">
+                    
+
+                </fieldset>
+                </div>
+                <div class="group"></div>
+               
+            </fieldset>
+            <button type="submit" >Send</button>
+            <input type="reset" id="reset" value="Cancel" name="class">
+            
+            </fieldset>
+
+        </form>
+    </div>
+    
+</body>
+</html>
